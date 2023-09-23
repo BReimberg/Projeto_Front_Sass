@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* N E S T I N G 
+comandos: sass nome-do-arquivo.scss:nome-do-arquivo-a-replicar.css;
+sass --watch nome-do-arquivo.scss:nome-do-arquivo-a-replicar.css;
+sass --watch .  pega todos os arquivos da pasta que sejam pré-processados;*/
+p span {
+  background: red;
+}
+p b {
+  background: black;
+}
+p:hover {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

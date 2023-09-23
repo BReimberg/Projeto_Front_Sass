@@ -1,0 +1,18 @@
+/* N E S T I N G 
+comandos: sass nome-do-arquivo.scss:nome-do-arquivo-a-replicar.css;
+sass --watch nome-do-arquivo.scss:nome-do-arquivo-a-replicar.css;
+sass --watch .  pega todos os arquivos da pasta que sejam pré-processados;*/
+
+p {
+    span {
+        background: red;
+    }
+
+    b {
+        background: black;
+    }
+
+    &:hover {
+        color: #fff;
+    }
+}

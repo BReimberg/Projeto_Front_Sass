@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* Variáveis (simbolo para variáveis "$") e Import */
+/*@extend .btn;  @extend: herdando; @includ: inclusão */
+/* background: darken = escurece o botão;
+        background: desaturate = tira um pouco da saturação da cor do botão;
+        background: mix = mistura a cor do $background com outra cor;
+        background: grayscale = tons/escalas de cinza de acordo com a cor do botão*/
+/* Para utilizar o @includ deve remover o ponto antes do btn principal e colocar @mixin;
+    apagar todos os pontos antes de cada btn e colocar @includ*/
+.btn {
+  width: 200px;
+  padding: 10px 0;
+  background: none;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+  margin: 10px;
+}
+.btn.btn-laranja {
+  background: orange;
+  color: #fff;
+}
+.btn.btn-laranja:hover {
+  background: gray;
+}
+.btn.btn-roxo {
+  background: purple;
+  color: #fff;
+}
+.btn.btn-roxo:hover {
+  background: #404040;
+}
+.btn.btn-rosa {
+  background: pink;
+  color: #000;
+}
+.btn.btn-rosa:hover {
+  background: #e0e0e0;
+}
+
+/*# sourceMappingURL=style.css.map */

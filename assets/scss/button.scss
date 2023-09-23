@@ -1,0 +1,37 @@
+/*@extend .btn;  @extend: herdando; @includ: inclusão */
+/* background: darken = escurece o botão;
+        background: desaturate = tira um pouco da saturação da cor do botão;
+        background: mix = mistura a cor do $background com outra cor;
+        background: grayscale = tons/escalas de cinza de acordo com a cor do botão*/
+/* Para utilizar o @includ deve remover o ponto antes do btn principal e colocar @mixin;
+    apagar todos os pontos antes de cada btn e colocar @includ*/
+    
+@mixin button-style($background, $color) {
+    background: $background;
+    color: $color;
+    &:hover {
+        background: grayscale($color: $background);
+    }
+}
+
+.btn {
+    width: 200px;
+    padding: 10px 0;
+    background: none;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+    margin: 10px;
+
+    &.btn-laranja {
+        @include button-style($color-orange,#fff);
+    }
+
+    &.btn-roxo {
+        @include button-style($color-purple,#fff);
+    }
+
+    &.btn-rosa {
+        @include button-style($color-pink,#000);
+    }
+}
